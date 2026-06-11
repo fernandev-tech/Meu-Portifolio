@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando B Sebastião | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <!--Usamos este container porque dentro do header temos o nome e o menu. Como eles estarão lado a lado, então o flexbox será aplicado no container e vai afetar o h1 e o nav ul que ficarão lado a lado. Pois no Flexbox  existe o container (pai) e item (filho) -->
+            <h1>Fernando B Sebastião</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SOBRE -->
+        <section id="sobre">
+            <div class="container">
+
+                <div class="sobre-content">
+
+                    <div class="sobre-imagem">
+                        <img src="img/perfil.jpeg" alt="Foto de Fernando">
+                    </div>
+
+                    <div class="sobre-texto">
+                        <h2>Sobre Mim</h2>
+
+                        <p>
+                            Eu sou Fernando B Sebastião, estudante de tecnologia e
+                            programador em crescimento.
+                        </p>
+
+                        <p>
+                            Atualmente estudo desenvolvimento web, linguagem C
+                            e redes de computadores no ensino médio.
+                        </p>
+
+                        <p>
+                            Tenho interesse em tecnologia, resolução de problemas
+                            e desenvolvimento de sistemas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <div class="container">
+                <h2>Projetos</h2>
+
+                <div class="cards-container">
+
+                    <!-- CARD 1 -->
+                    <div class="card">
+                        <h3>Sistema de Gestão de Vendas em C</h3>
+                        <p>Um sistema básico de gestão de vendas desenvolvido em linguagem C.</p>
+
+                        <div class="card-buttons">
+                            <a href="#" class="btn">Ver Projeto</a>
+                            <a href="#" class="btn btn-secondary">Ver Código</a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="card">
+                        <h3>Sistema de Gestão de Notas</h3>
+                        <p>Projeto desenvolvido com Next.js, focado na lógica e estrutura do sistema.</p>
+
+                        <div class="card-buttons">
+                            <a href="#" class="btn">Ver Projeto</a>
+                            <a href="#" class="btn btn-secondary">Ver Código</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <div class="container">
+                <h2>Habilidades</h2>
+
+                <div class="cards-container">
+
+                    <div class="card">
+                        <!--Por padrão, os ícones do Font Awesome não veem com cores. Eles herdam a cor do CSS. Então. se quiser com qque eles tenham cores, basta atribuir uma class e estilizar com CSS normalmente.-->
+
+                        <!--Exemplo. No código abaixo, somente html-icon é o nome da class que criei. O resto faz parte do nome do ícone.-->
+                        <i class="fa-brands fa-html5 html-icon"></i>
+
+                        <h3>HTML</h3>
+                        <p>Estruturação de páginas web.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-css3-alt css-icon"></i>
+
+                        <h3>CSS</h3>
+                        <p>Estilização e layout responsivo.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-js js-icon"></i>
+
+                        <h3>JavaScript</h3>
+                        <p>Interatividade e lógica do frontend.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-code c-icon"></i>
+
+                        <h3>C</h3>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-server network-icon"></i>
+
+                        <h3>Redes de Computadores</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+
+                <div class="contato-info">
+                    <p><strong>Email:</strong> ferdinandsebastion4@gmail.com</p>
+                    <p><strong>Telefone:</strong> (adiciona aqui)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Fernando B Sebastião. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
