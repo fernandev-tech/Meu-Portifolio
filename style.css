@@ -173,6 +173,19 @@ h2 {
     margin-bottom: 15px;
 }
 
+.timeline {
+    border-left: 4px solid #00bcd4;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+}
+
+.timeline-item h3 {
+    color: #00bcd4;
+    margin-bottom: 5px;
+}
 
 footer {
     background-color: #333;
@@ -187,4 +200,25 @@ footer h3 {
 
 footer p {
     margin-bottom: 5px;
+}
+
+.contato-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /*o flex-wrap evita problemas quando faltar espaço.*/
+}
+
+/*A qui quero deixar cada contato em um card. Card email e card telefone.*/
+.contato-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.contato-item h3 {
+    /*Aqui é para deixar um espaço entre o título e o conteúdo. Para mais legiblidade*/
+    margin-bottom: 10px;
 }
