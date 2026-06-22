@@ -14,3 +14,25 @@ Apresento quem sou, a minha vida pessoal, minha localização, meus gostos.
 
 ## Contatos
 
+## Possíveis Melhorias
+
+animações
+
+responsividade
+
+GitHub
+
+tema escuro
+
+melhor layout dos projetos
+
+melhor navegação
+
+ícones de contacto
+
+seção de certificados
+
+etc.
+
+
+
