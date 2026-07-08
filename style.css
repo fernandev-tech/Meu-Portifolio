@@ -294,9 +294,11 @@ h2 {
 .timeline-item::before {
     /*Obrigatório. Sem o content não funciona*/
     content: "";
+    /*Usei width e heigth pois antes de se tornar circulo primeiro deve ser um quadrado*/
     width: 18px;
     height: 18px;
     background-color: #00bcd4;
+    /*Agora com o border-radius fica círculo*/
     border-radius: 50%;
     /*Permite posicionar exatamente onde queremos.*/
     position: absolute;
@@ -362,4 +364,109 @@ footer h3 {
 
 footer p {
     margin-bottom: 5px;
+}
+
+/*Responsividade Mobile*/
+
+@media (max-width: 768px) {
+
+    .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-imagem img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sobre-content p {
+        text-align: justify;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        /*Permite que os links quebrem linha em vez de desaparecer da tela*/
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -30px;
+    }
+
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .skill-card {
+        width: calc(50% - 10px);
+        /*
+calc() significa "calculate" (calcular).
+
+Neste caso estamos dizendo ao navegador:
+
+"Quero metade da largura disponível, mas
+desconta 10px para compensar metade do gap."
+
+Por quê?
+
+O container possui 1000px.
+
+Se cada card tivesse:
+
+width: 50%;
+
+cada card teria:
+
+500px.
+
+Então:
+
+500 + 20(gap) + 500 = 1020px
+
+Como o container possui apenas 1000px,
+os dois cards já não cabem na mesma linha.
+
+Por isso usamos:
+
+width: calc(50% - 10px);
+
+Assim cada card fica com:
+
+490px.
+
+Logo:
+
+490 + 20 + 490 = 1000px.
+
+Agora os dois cards cabem perfeitamente.
+
+*/
+    }
+
+    .contato-info {
+        flex-direction: column;
+    }
+
+    .contato-item {
+        width: 100%;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
 }
