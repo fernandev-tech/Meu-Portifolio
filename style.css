@@ -169,6 +169,59 @@ nav a:hover {
     margin-top: auto;
 }
 
+/*Redes Profissionais*/
+
+.redes-descricao {
+    margin-bottom: 35px;
+    color: #555;
+}
+
+.profissional-card {
+    text-align: center;
+}
+
+.profissional-card i {
+    margin-bottom: 15px;
+}
+
+.profissional-card h3 {
+    margin-bottom: 10px;
+}
+
+.profissional-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.profissional-card {
+    /*Usei o fexbox na Cross axis para controlar melhor o alinhamento de todos. E Também se um card o seu texto for menor, o botão pode subir e o que tiver maior texto o botão pode deser.*/
+    display: flex;
+    flex-direction: column;
+}
+
+.profissional-card .card-buttons {
+    margin-top: auto;
+    justify-content: center;
+}
+
+.profissional-card:hover i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.linkedin-icon {
+    color: #0A66C2;
+}
+
+.curriculo-icon {
+    color: #5c6770;
+}
+
+.certificado-icon {
+    color: #f4b400;
+}
+
 
 /*Habilidades*/
 
@@ -407,10 +460,6 @@ footer p {
         margin-bottom: 30px;
     }
 
-    .project-card {
-        width: 100%;
-    }
-
     .skill-card {
         width: calc(50% - 10px);
         /*
@@ -455,6 +504,10 @@ Logo:
 Agora os dois cards cabem perfeitamente.
 
 */
+    }
+
+    .profissional-card {
+        width: calc(50% - 10px);
     }
 
     .contato-info {
